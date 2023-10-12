@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+}
+
+main {
+    margin-top: 1%;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   background-color: lightskyblue;
+   color:gray;
+       
+}
+.header>img{
+  max-width: 50px;
+  border-radius: 30px;
+}
+
+.nav {
+  display: flex;
+  margin: 10px 0;
+  
+}
+.nav > li {
+  padding: 0 10px;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav > li > a:hover {
+  color: black;
+ cursor: grab;
+
+}
+
+input[type=text]{
+width:30%;
+}
+
+input[type=text]:focus {
+  background-color:lightblue;
+}
+
+input[type=email]{
+  width:30%;
+  }
+  
+  input[type=email]:focus {
+    background-color:lightblue;
+  }
+
+ textarea[name=message]{
+    width:30%;
+ }
+    
+    textarea[name=message]:focus
+     {
+      background-color:lightblue;
+    }
+
+section {
+  padding: 5px;
+  text-align: left;
+       }
+
+h1 {
+  font-size: 30px;
+ margin: 5px auto;
+   }
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px ;
+   }
+
+.project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+form input,form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  color: #fff;
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#my-image {
+     cursor: pointer;
+  }
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+   
+  form input, form textarea, form button {
+    width: 100%;
+  }
+    
+  .nav {
+  display: flex;
+  margin: 10px 0;
+  
+      }
+.nav > li {
+  padding: 0 10px;
+        }
+
+.nav > li > a {
+  text-decoration: none;
+  color: white;
+              }
+
+.nav > li > a:hover {
+                    color: blue;
+                    cursor: grab;
+                    }
+input[type=text]{
+                width:100%;
+                  }
+  input[type=email]{
+    width:100%;
+    }
+    textarea[name=message]{
+      width:100%;
+      }
+    
+}
