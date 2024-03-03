@@ -17,7 +17,7 @@ main {
 .header {
    display: flex;
    justify-content: space-between;
-   background-color: lightskyblue;
+   background-color: #E6AA68;
    color:gray;
        
 }
@@ -169,4 +169,20 @@ input[type=text]{
       width:100%;
       }
     
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.project {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; 
+  }
 }
