@@ -12,3 +12,8 @@ The portfolio website was created using the following technologies:
 
 - HTML: Used to structure the content of the webpages.
 - CSS: Used to style the webpages and add visual elements.
+- REACT
+- EXPRESS JS
+- BOOTSTRAP
+- NODE JS
+  
