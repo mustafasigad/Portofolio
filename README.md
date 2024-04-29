@@ -17,3 +17,4 @@ The portfolio website was created using the following technologies:
 - BOOTSTRAP
 - NODE JS
   
+https://main--comfy-starlight-d3c8fc.netlify.app/
