@@ -36,10 +36,10 @@ console.log(currentPage)
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       <main className="mx-3">{renderPage()}</main>
-     <div>    
+      
      <Footer />
            
-       </div> 
+     
     </div>
     
   );

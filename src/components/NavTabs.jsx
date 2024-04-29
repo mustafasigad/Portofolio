@@ -17,7 +17,7 @@ function NavTabs({ handlePageChange }) {
     <ul className="navbar nav-tabs " style={styles.headerStyle}>
       <div>
       <li className="text-white " >
-                    
+                   
        Mustafa Sigad
       
       </li>

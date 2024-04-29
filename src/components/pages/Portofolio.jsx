@@ -1,132 +1,83 @@
+import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-const containerStyles = {
+
+const portfolioItems = [
+    {
+        title: 'Database interaction with mysQL and NODEJS',
+        imgSrc: 'mysql.jpg', // Replace with actual image URL or path
+        gitRepo: 'https://github.com/mustafasigad/mysql_business_department',
+        videoLink: 'https://drive.google.com/file/d/1_jgu-2yS_gMih-aXCH1-ZLnyCGQnNagR/view',
+    },
  
-    background: '#fffcf2',
-  
-}
+    {
+        title: 'Day planner',
+        imgSrc: 'dayplanner.jpg',
+        gitRepo: 'https://github.com/mustafasigad/Day_planner',
+        deployment: 'https://mustafasigad.github.io/Day_planner/',
+    },
+    {
+        title: 'Weather API',
+        imgSrc: 'weatherforcastApi.jpg', // Replace with actual image URL or path
+        gitRepo: 'https://github.com/mustafasigad/WEATHER_API',
+        deployment: 'https://mustafasigad.github.io/WEATHER_API/',
+    },
+    {
+        title: 'MERN googlesearch to SearchBooks',
+        imgSrc: 'MERN_searchBooks.jpg', // Replace with actual image URL or path
+        gitRepo: 'https://github.com/mustafasigad/MERN_SearchBooks',
+        // videoLink: 'https://drive.google.com/file/d/1fHfdLUAbVETAapaU-IG-aOmdm8kP8m8T/view',
+    },
+    {
+        title: 'Expense Tracker ',
+        imgSrc: 'expenseTracker.jpg', // Replace with actual image URL or path
+        gitRepo: 'https://github.com/BudgetBuddy887/expenseTracker',
+        deployment: 'https://budgetbuddytracker.onrender.com/',
+    },
+    {
+        title: 'Daily News and Weather ',
+        imgSrc: 'weatherNews.jpg', // Replace with actual image URL or path
+        gitRepo: 'https://github.com/mustafasigad/Daily_Pulse_WNews',
+        deployment: 'https://mustafasigad.github.io/Daily_Pulse_WNews/',
+    },
+    {
+        title: 'Showcasing MVC framework by creating a TravelBlog ',
+        imgSrc: 'jsonB.jpg', // Replace with actual image URL or path
+        gitRepo: 'https://github.com/MustafeMohamoud1/JBTravelBlog',
+        deployment: 'https://jbtravelblogfinal-84a20cc94acf.herokuapp.com/',
+    },
+];
 
+const cardStyle = {
+    backgroundColor: '#80ff80', // Green color
+};
 
-
-export default function Portofolio() {
- 
-  return (
-
-    
-    <Row xs={1} md={2} lg={3} className="g-4">
-
-<Col xs={3} md={4} lg={3}>
-
-      <Card style={containerStyles}>
-      <Card.Img variant="top"   src="MUSTI.jpg"  />
-        
-        <Card.Body>
-          
-          <Card.Text>
-            HTML Refactoring
-          </Card.Text>
-          <Card.Link href="https://github.com/mustafasigad/My_First_CSS_HTML_Code_refactoring">GIT REPO</Card.Link>
-        <Card.Link href="https://mustafasigad.github.io/My_First_CSS_HTML_Code_refactoring/">Deploy</Card.Link>
-        </Card.Body>
-      
-      </Card>
-      
-      </Col>
-
-      <Col xs={3} md={4} lg={3}>
-      <Card style={containerStyles}>
-        <Card.Img  
-          src="MUSTI.jpg" 
-         
-        />
-        
-        <Card.Body>
-       
-          <Card.Text>
-          Generating Readme with NODE
-          </Card.Text>
-          <Card.Link href="https://github.com/mustafasigad/ReadMe_Challenge">GIT REPO</Card.Link>
-        <Card.Link href=" https://drive.google.com/file/d/1fHfdLUAbVETAapaU-IG-aOmdm8kP8m8T/view">Video</Card.Link>
-        </Card.Body>
-      
-      </Card>
-      </Col>
-
-      <Col xs={3} md={4} lg={3}>
-      <Card style={containerStyles}>
-        <Card.Img  
-      src="MUSTI.jpg" 
-        />
-        
-        <Card.Body>
-        
-          <Card.Text>
-          Weather App with JAVaSCRIPT
-          </Card.Text>
-          <Card.Link href="https://github.com/mustafasigad/Daily_Pulse_WNews">GIT REPO</Card.Link>
-        <Card.Link href="https://mustafasigad.github.io/Daily_Pulse_WNews/">Deploy</Card.Link>
-        </Card.Body>
-      
-      </Card>
-      </Col>
-   
-      <Col xs={3} md={4} lg={3}>
-      <Card style={containerStyles}>
-        <Card.Img  
-          src="MUSTI.jpg" 
-        />
-        
-        <Card.Body>
-          
-          <Card.Text>
-            Day planner.
-          </Card.Text>
-          <Card.Link href="https://github.com/mustafasigad/Day_planner">GIT REPO</Card.Link>
-        <Card.Link href="https://mustafasigad.github.io/Day_planner/">Deploy</Card.Link>
-        </Card.Body>
-      
-      </Card>
-      </Col>
-
-      <Col xs={3} md={4} lg={3}>
-      <Card style={containerStyles}>
-        <Card.Img  
-          src="MUSTI.jpg" 
-        />
-        
-        <Card.Body>
-      
-          <Card.Text>
-            Weather API.
-          </Card.Text>
-          <Card.Link href="https://github.com/mustafasigad/WEATHER_API">GIT REPO</Card.Link>
-        <Card.Link href="https://mustafasigad.github.io/WEATHER_API/">Deploy</Card.Link>
-        </Card.Body>
-      
-      </Card>
-      </Col>
-
-      <Col xs={3} md={4} lg={3}>
-      <Card style={containerStyles}>
-        <Card.Img  
-          src="MUSTI.jpg" 
-        />
-        
-        <Card.Body>
-          
-          <Card.Text>
-            Note Taker with EXPRESS.
-          </Card.Text>
-          <Card.Link href="https://github.com/mustafasigad/Note_taker_expressjs">GIT REPO</Card.Link>
-        <Card.Link href="https://drive.google.com/file/d/1fHfdLUAbVETAapaU-IG-aOmdm8kP8m8T/view">Video</Card.Link>
-        </Card.Body>
-      
-      </Card>
-      </Col>
-   
-
-  </Row>
-);
+export default function Portfolio() {
+    return (
+        <Container className="my-5" >
+            <h2 className="text-center mb-4">Portfolio</h2>
+            <Row>
+                {portfolioItems.map((item, idx) => (
+                    <Col key={idx} xs={12} md={6} lg={4} className="mb-4">
+                        <Card style={cardStyle}>
+                            <Card.Img variant="top" src={item.imgSrc}/>
+                            <Card.Body >
+                                <Card.Title>{item.title}</Card.Title>
+                                <Card.Link href={item.gitRepo}>Git Repo</Card.Link>
+                                {item.deployment && (
+                                    <Card.Link href={item.deployment}>Deployment</Card.Link>
+                                )}
+                                {item.videoLink && (
+                                    <Card.Link href={item.videoLink}>Video</Card.Link>
+                                )}
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+        </Container>
+    );
 }
